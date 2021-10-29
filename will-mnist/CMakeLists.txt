@@ -13,7 +13,7 @@ set(LINK_LIBRARIES will-cuda cudnn cudart cublas openblas)
 endif()
 aux_source_directory(./ SRC_LIST)
 
-include_directories(../include ../src ../../common ../will)
+include_directories(/usr/local/include ../include ../src ../../common ../will)
 link_directories(.)
 
 add_library(will-mnist SHARED ${SRC_LIST})

@@ -6,7 +6,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 option(CCCC_CPU "CPU support" ON)
- 
+
 if(NOT CCCC_CPU)
 add_subdirectory(will-cuda)
 endif()
