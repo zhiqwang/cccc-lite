@@ -8,7 +8,7 @@ set(CMAKE_CXX_COMPILER $ENV{CXX})
 # set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -fopenmp -DNDEBUG")
 
 if(CCCC_CPU)
-set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -fopenmp -DNO_CUDA -DNDEBUG")
+set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -DNO_CUDA -DNDEBUG")
 set(LINK_LIBRARIES  openblas)
 else()
 set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -fopenmp -DNDEBUG")

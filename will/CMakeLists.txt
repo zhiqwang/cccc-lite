@@ -19,7 +19,7 @@ set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -DNDEBUG")
 set(LINK_LIBRARIES will-cuda cudnn cudart cublas openblas)
 endif()
 include_directories(/usr/local/include ../../common ../include . ./layer)
-# link_directories(/usr/local/cuda/lib64)
+link_directories(/usr/local/opt/openblas/lib)
 
 add_library(will SHARED ${SRC_LIST})
 target_link_libraries(will LINK_PRIVATE ${LINK_LIBRARIES})
