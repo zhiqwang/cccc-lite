@@ -15,7 +15,7 @@ set(CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread -fopenmp -DNDEBUG")
 set(LINK_LIBRARIES will-cuda cudnn cudart cublas openblas)
 endif()
 include_directories(../../common ../include ../will)
-# link_directories(/usr/local/cuda/lib64)
+link_directories(/usr/local/opt/openblas/lib)
 
 add_executable(will-windows ${SRC_LIST})
 target_link_libraries(will-windows will)
